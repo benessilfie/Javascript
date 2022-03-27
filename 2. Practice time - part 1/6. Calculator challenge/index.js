@@ -16,24 +16,24 @@ let sumEL = document.getElementById("sum-el");
 
 function add() {
   let sum = num1 + num2;
-  sumEL.textContent = sum;
+  sumEL.textContent = "Sum: " + sum;
   console.log(sum);
 }
 
 function subtract() {
   let sum = num1 - num2;
-  sumEL.textContent = sum;
+  sumEL.textContent = "Sum: " + sum;
   console.log(sum);
 }
 
 function divide() {
   let sum = num1 / num2;
-  sumEL.textContent = sum;
+  sumEL.textContent = "Sum: " + sum;
   console.log(sum);
 }
 
 function multiply() {
   let sum = num1 * num2;
-  sumEL.textContent = sum;
+  sumEL.textContent = "Sum: " + sum;
   console.log(sum);
 }
