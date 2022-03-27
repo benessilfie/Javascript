@@ -6,3 +6,4 @@ let pEl = document.getElementById("error");
 function errorMessage() {
   pEl.textContent = "Something went wrong, please try again";
 }
+
