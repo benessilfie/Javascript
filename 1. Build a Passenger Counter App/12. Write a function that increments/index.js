@@ -7,6 +7,10 @@ function incrementLaps() {
   lapsCompleted += 1;
 }
 
+incrementLaps()
+incrementLaps()
+incrementLaps()
+
 
 
 
