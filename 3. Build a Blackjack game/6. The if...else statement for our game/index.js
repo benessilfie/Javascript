@@ -1,6 +1,6 @@
 let firstCard = 10;
 let secondCard = 7;
-let sum = firstCard + secondCard + 4;
+let sum = firstCard + secondCard;
 
 // Write the conditional according to these rules:
 
