@@ -1,19 +1,31 @@
-let myLeads = ["www.awesomelead.com"]
+let myLeads = `["www.awesomelead.com"]`;
 
+// 1. Turn the myLeads string into an array
+myLeads = JSON.parse(myLeads);
+console.log(myLeads);
 
+//2. Push a new a value to the array
+myLeads.push("www.essilfie.dev");
+console.log(myLeads);
 
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
+// 3. Turn the array into a string again
+myLeads = JSON.stringify(myLeads);
 
-inputBtn.addEventListener("click", function() {
-    myLeads.push(inputEl.value)
-    inputEl.value = ""
-    renderLeads()
-})
+// 4. Console.log the string using typeof to verify that it's a string
+console.log(typeof myLeads);
+
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const ulEl = document.getElementById("ul-el");
+
+inputBtn.addEventListener("click", function () {
+    myLeads.push(inputEl.value);
+    inputEl.value = "";
+    renderLeads();
+});
 
 function renderLeads() {
-    let listItems = ""
+    let listItems = "";
     for (let i = 0; i < myLeads.length; i++) {
         listItems += `
             <li>
@@ -21,7 +33,7 @@ function renderLeads() {
                     ${myLeads[i]}
                 </a>
             </li>
-        `
+        `;
     }
-    ulEl.innerHTML = listItems  
+    ulEl.innerHTML = listItems;
 }
